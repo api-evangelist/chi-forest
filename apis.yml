@@ -1,8 +1,24 @@
 aid: chi-forest
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chi-forest.png
 name: Chi Forest
-description: 'Chi Forest is a company surfaced as a portfolio company of hongshan, idg-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Chi Forest (marketed as CHI FOREST) is the US-facing consumer beverage brand of the Chinese
+  drinks company Genki Forest (元气森林), backed by Hongshan (Sequoia China) and IDG Capital. The company
+  produces zero-sugar, zero-calorie, zero-caffeine sparkling refreshers with Asian-inspired, fruit-forward
+  flavors such as guava and lychee, distributed through retailers including Costco, Amazon, and H Mart.
+  It is a direct-to-consumer and retail beverage brand with a marketing/e-commerce web presence and no
+  public developer platform, API, or documentation surface at this time. This profile is maintained in
+  the API Evangelist network as a consumer-sector company record.'
 url: https://raw.githubusercontent.com/api-evangelist/chi-forest/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,13 +29,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Beverages
+- Food and Beverage
+- Sparkling Water
+- Direct to Consumer
+- Retail
+- Consumer Packaged Goods
+common:
+- type: DomainSecurity
+  url: security/chi-forest-domain-security.yml
+- type: Website
+  url: https://www.chiforest.com/
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
